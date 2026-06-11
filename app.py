@@ -129,7 +129,7 @@ with kpi1:
     total_articulos = len(df_filtered)
 
     st.markdown(
-        f'<div class="metric-box"><h3>{total_articulos} artículos</h3><p style="color: #64748b;">Muestra de literatura científica</p></div>',
+        f'<div class="metric-box"><h3>{total_articulos} artículos</h3><p style="color: #0f172a !important;"">Muestra de literatura científica</p></div>',
         unsafe_allow_html=True
     )
 
@@ -137,7 +137,7 @@ with kpi2:
     pais_lider = "India"
 
     st.markdown(
-        f'<div class="metric-box"><h3>{pais_lider}</h3><p style="color: #64748b;">País con mayor producción</p></div>',
+        f'<div class="metric-box"><h3>{pais_lider}</h3><p style="color: #0f172a !important;"">País con mayor producción</p></div>',
         unsafe_allow_html=True
     )
 
@@ -145,7 +145,7 @@ with kpi3:
     citas_totales = int(df_filtered['Cited by'].sum()) if 'Cited by' in df_filtered.columns else 0
 
     st.markdown(
-        f'<div class="metric-box"><h3>{citas_totales} citas</h3><p style="color: #64748b;">Impacto total en la comunidad científica</p></div>',
+        f'<div class="metric-box"><h3>{citas_totales} citas</h3><p style="color: #0f172a !important;"">Impacto total en la comunidad científica</p></div>',
         unsafe_allow_html=True
     )
 
